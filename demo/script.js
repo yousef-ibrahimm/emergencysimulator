@@ -10,9 +10,11 @@ const storyArray = [
     buttons: {
       btn1: {
         text: "move forward",
+        id: 1,
       },
       btn2: {
         text: "button 2 has been pressed",
+        id: 1,
       },
     },
   },
