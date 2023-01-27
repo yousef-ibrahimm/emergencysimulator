@@ -32,22 +32,22 @@
       "buttons": {
         "btn1": {
           "text": "Check Airway Damage",
-          "id": 0,
+          "id": 2,
           "optimum": true
         },
         "btn2": {
           "text": "Check Breathing",
-          "id": 0,
+          "id": 2,
           "optimum": false
         },
         "btn3": {
           "text": "Check Circulation",
-          "id": 0,
+          "id": 2,
           "optimum": false
         },
         "btn4": {
           "text": "Check for disability",
-          "id": 0,
+          "id": 2,
           "optimum": false
         }
       }
