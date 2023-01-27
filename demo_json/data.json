@@ -2,31 +2,82 @@
   "data": [
     {
       "id": 0,
-      "text": "try",
+      "text": "You arrive on scene and find a patient laying on the ground, apparently he has suffered a fall. What do you check for first?",
       "buttons": {
         "btn1": {
-          "text": "move forward",
+          "text": "Catastrophic Haemorrhage",
           "id": 1,
-          "correct": true
+          "optimum": true
         },
         "btn2": {
-          "text": "button 2 has been pressed",
-          "id": 1,
-          "correct": false
+          "text": "Airway damage",
+          "id": 2,
+          "optimum": false
         },
         "btn3": {
-          "text": "button 3 has been pressed",
-          "id": 1,
-          "correct": false
+          "text": "Breathing",
+          "id": 2,
+          "optimum": false
         },
         "btn4": {
-          "text": "button 4 has been pressed",
+          "text": "Circulation",
           "id": 2,
-          "correct": false
+          "optimum": false
         }
       }
     },
-    {}
+    {
+      "id": 1,
+      "text": "Patient is not bleeding. What do you check for next?",
+      "buttons": {
+        "btn1": {
+          "text": "Check Airway Damage",
+          "id": 0,
+          "optimum": true
+        },
+        "btn2": {
+          "text": "Check Breathing",
+          "id": 0,
+          "optimum": false
+        },
+        "btn3": {
+          "text": "Check Circulation",
+          "id": 0,
+          "optimum": false
+        },
+        "btn4": {
+          "text": "Check for disability",
+          "id": 0,
+          "optimum": false
+        }
+      }
+    },
+    {
+      "id": 2,
+      "text": "Patient could've been bleeding. There appears to be damage to the airway, what do you do next?",
+      "buttons": {
+        "btn1": {
+          "text": "Obtain Spo2 rating",
+          "id": 0,
+          "optimum": true
+        },
+        "btn2": {
+          "text": "Adminster Oxygen",
+          "id": 0,
+          "optimum": false
+        },
+        "btn3": {
+          "text": "Start CPR",
+          "id": 0,
+          "optimum": false
+        },
+        "btn4": {
+          "text": "Move patient",
+          "id": 0,
+          "optimum": false
+        }
+      }
+    }
   ],
   "author": "Yousef Ibrahim",
   "date": "26/01/2023"
