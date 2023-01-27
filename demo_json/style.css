@@ -1,7 +1,6 @@
-*,
-::after,
-::before {
-  box-sizing: border-box;
+:root {
+  --primaryColor: purple;
+  --secondaryColor: ivory;
 }
 
 body {
@@ -11,9 +10,18 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: rgb(113, 182, 242);
+  background-color: var(--primaryColor);
   width: 100vw;
   height: 100vh;
+}
+
+button {
+  color: var(--primaryColor);
+  padding: 0 0.2em 0 0.2em;
+  border: var(--primaryColor) solid 0.2em;
+  background-color: var(--secondaryColor);
+
+  font-size: 100%;
 }
 
 .question-container {
@@ -24,7 +32,7 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 80%;
-  background-color: #fff;
+  background-color: var(--secondaryColor);
 }
 
 .buttons {
@@ -32,4 +40,37 @@ body {
   grid-template-columns: repeat(2, auto);
   gap: 15px;
   margin-top: 20px;
+}
+
+button:hover{
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+@media (max-width: 900px){
+  * {
+    font-size: 3vw;
+  }
+  button {
+    font-size: 200%;
+  }
+  .buttons {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 450px){
+  * {
+    font-size: 5vw;
+  }
+  button {
+    font-size: 150%;
+  }
+  .buttons {
+    gap: 5px;
+  }
 }
