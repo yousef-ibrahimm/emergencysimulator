@@ -1,18 +1,26 @@
 :root {
-  --primaryColor: purple;
-  --secondaryColor: ivory;
+  --primaryColor: #621360;
+  --secondaryColor: #ffffff;
 }
 
 body {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   background-color: var(--primaryColor);
   width: 100vw;
   height: 100vh;
+}
+
+h1 {
+  display: flex;
+  margin: 10;
+  padding: 10;
+  color: var(--secondaryColor);
 }
 
 button {
@@ -43,7 +51,18 @@ button {
   margin-top: 20px;
 }
 
-button:hover{
+.hide {
+  display: none;
+}
+
+/* .display {
+  border: thick double;
+  border-width: 5px;
+  border-color: var(--primaryColor);
+  padding: 10;
+} */
+
+button:hover {
   opacity: 0.7;
   transform: scale(1.05);
 }
@@ -52,7 +71,7 @@ button:disabled {
   opacity: 0.5;
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
   * {
     font-size: 3vw;
   }
@@ -64,7 +83,7 @@ button:disabled {
   }
 }
 
-@media (max-width: 450px){
+@media (max-width: 450px) {
   * {
     font-size: 5vw;
   }

@@ -32,12 +32,12 @@
       "buttons": {
         "btn1": {
           "text": "Check Airway Damage",
-          "id": 2,
+          "id": 3,
           "optimum": true
         },
         "btn2": {
           "text": "Check Breathing",
-          "id": 2,
+          "id": 3,
           "optimum": false
         },
         "btn3": {
@@ -58,22 +58,179 @@
       "buttons": {
         "btn1": {
           "text": "Obtain Spo2 rating",
-          "id": 0,
+          "id": 4,
           "optimum": true
         },
         "btn2": {
           "text": "Adminster Oxygen",
-          "id": 0,
+          "id": 2,
           "optimum": false
         },
         "btn3": {
           "text": "Start CPR",
-          "id": 0,
+          "id": 2,
           "optimum": false
         },
         "btn4": {
           "text": "Move patient",
-          "id": 0,
+          "id": 2,
+          "optimum": false
+        }
+      }
+    },
+    {
+      "id": 3,
+      "text": "There appears to be damage to the airway, what do you do next?",
+      "buttons": {
+        "btn1": {
+          "text": "Obtain Spo2 rating",
+          "id": 4,
+          "optimum": true
+        },
+        "btn2": {
+          "text": "Adminster Oxygen",
+          "id": 5,
+          "optimum": false
+        },
+        "btn3": {
+          "text": "Start CPR",
+          "id": 3,
+          "optimum": false
+        },
+        "btn4": {
+          "text": "Move patient",
+          "id": 3,
+          "optimum": false
+        }
+      }
+    },
+    {
+      "id": 4,
+      "text": "SpO2 rating is low.",
+      "buttons": {
+        "btn1": {
+          "text": "Adminster Oxygen",
+          "id": 5,
+          "optimum": true
+        },
+        "btn2": {
+          "text": "Start CPR",
+          "id": 6,
+          "optimum": false
+        },
+        "btn3": {
+          "text": "Move Patient",
+          "id": 4,
+          "optimum": false
+        },
+        "btn4": {
+          "text": "Measure again",
+          "id": 4,
+          "optimum": false
+        }
+      }
+    },
+    {
+      "id": 5,
+      "text": "Patient is responding",
+      "buttons": {
+        "btn1": {
+          "text": "Keep adminstering Oxygen",
+          "id": 5,
+          "optimum": false
+        },
+        "btn2": {
+          "text": "Start CPR",
+          "id": 6,
+          "optimum": false
+        },
+        "btn3": {
+          "text": "Move Patient",
+          "id": 5,
+          "optimum": false
+        },
+        "btn4": {
+          "text": "Talk to patient",
+          "id": 7,
+          "optimum": true
+        }
+      }
+    },
+    {
+      "id": 6,
+      "text": "Patient is not responding",
+      "buttons": {
+        "btn1": {
+          "text": "Adminster Oxygen",
+          "id": 5,
+          "optimum": true
+        },
+        "btn2": {
+          "text": "Continue CPR",
+          "id": 6,
+          "optimum": false
+        },
+        "btn3": {
+          "text": "Move Patient",
+          "id": 6,
+          "optimum": false
+        },
+        "btn4": {
+          "text": "Call for backup",
+          "id": 6,
+          "optimum": false
+        }
+      }
+    },
+    {
+      "id": 7,
+      "text": "He says he is fine now. Good Job!, Press to end",
+      "buttons": {
+        "btn1": {
+          "text": "END",
+          "id": 8,
+          "optimum": true
+        },
+        "btn2": {
+          "text": "END",
+          "id": 8,
+          "optimum": false
+        },
+        "btn3": {
+          "text": "END",
+          "id": 8,
+          "optimum": false
+        },
+        "btn4": {
+          "text": "END",
+          "id": 8,
+          "optimum": false
+        }
+      }
+    },
+    {
+      "id": 8,
+      "text": "",
+      "end": true,
+      "buttons": {
+        "btn1": {
+          "text": "",
+          "id": 8,
+          "optimum": true
+        },
+        "btn2": {
+          "text": "",
+          "id": 8,
+          "optimum": false
+        },
+        "btn3": {
+          "text": "",
+          "id": 8,
+          "optimum": false
+        },
+        "btn4": {
+          "text": "",
+          "id": 8,
           "optimum": false
         }
       }
